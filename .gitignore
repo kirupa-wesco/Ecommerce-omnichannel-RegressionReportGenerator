@@ -1,0 +1,7 @@
+Artifacts/
+node_modules/
+package-lock.json
+Reports/
+*.log
+.vscode/
+.github/instructions/
