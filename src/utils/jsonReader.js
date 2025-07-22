@@ -36,15 +36,23 @@ function readTestResultsFromFolder(folderPath) {
         if (hasFailure) {
             allChildren.forEach(child => {
                 if (child.result && child.result.toUpperCase() === "FAILURE") {
+                    // ...existing code...
+                    let rawFailureMsg = json.testFailureMessage || "";
+                    let cleanFailureMsg = rawFailureMsg.split("Build info:")[0].trim();
+
                     failureData.push({
                         name: testCaseName,
                         feature,
                         scenario,
                         step: child.description || "N/A",
                         reason: (child.exception && child.exception.message) || "No message",
-                        remarks: "Check logs",
-                        screenshot: child.screenshotPath || "" // Screenshot path add panniten
+                        screenshot: child.screenshotPath || "",
+                        result: child.result || 'FAILURE',
+                        testFailureClassname: json.testFailureClassname || "",
+                        testFailureMessage: cleanFailureMsg,
+                        testFailureSummary: json.testFailureSummary || ""
                     });
+                    // ...existing code...
                 }
             });
         } else {

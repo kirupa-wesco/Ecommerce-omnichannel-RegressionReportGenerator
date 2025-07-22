@@ -72,7 +72,10 @@ class ReportGenerator {
             { header: 'Workflow Name', key: 'workflowName', width: 30 },
             { header: 'Feature', key: 'feature', width: 30 },
             { header: 'Remarks', key: 'remarks', width: 30 },
-            { header: 'Result', key: 'result', width: 10 }
+            { header: 'Result', key: 'result', width: 10 },
+            { header: 'Failure Classname', key: 'testFailureClassname', width: 30 },
+            { header: 'Failure Message', key: 'testFailureMessage', width: 50 },
+            { header: 'Failure Summary', key: 'testFailureSummary', width: 50 }
         ];
 
         failureData.forEach((testCase) => {
@@ -107,7 +110,10 @@ class ReportGenerator {
                 feature,
                 step: testCase.step,
                 failedReason: testCase.reason,
-                remarks: testCase.remarks
+                result: testCase.result || 'FAIL',
+                testFailureClassname: testCase.testFailureClassname || '',
+                testFailureMessage: testCase.testFailureMessage || '',
+                testFailureSummary: testCase.testFailureSummary || ''
             });
         });
 
