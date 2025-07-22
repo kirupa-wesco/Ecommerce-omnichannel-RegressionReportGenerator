@@ -15,8 +15,8 @@ Hey! 😎 Welcome to the RegressionReportGenerator project. This repo is designe
 │   │   └── cs.instructions.md
 │   └── workflows/
 ├── Artifacts/
-│   ├── ecommerce-omnichannel-fta-GithubjodId-BranchName-BrandName-TeamName-workflowName/
-│   └── ecommerce-omnichannel-fta-GithubjodId-BranchName-BrandName-TeamName-workflowName/
+│   ├── ECommerce-omnichannel-fta-githubJobId-branch-env-brand-team-workflowName/
+│   └── ECommerce-omnichannel-fta-githubJobId-branch-env-brand-team-workflowName/
 ├── Reports/
 │   ├── Failures/
 │   │   └── AllFailedTestCases.xlsx
@@ -62,11 +62,11 @@ Hey! 😎 Welcome to the RegressionReportGenerator project. This repo is designe
 - **Artifacts Folder Naming:**  
     Always name your folders inside `Artifacts/` using this format:  
     ```
-    RepoName-JobId-Branch-Brand-TeamName-WorkflowName
+    RepoName-githubJobID-branch-env-brand-team-workflowName
     ```
     Example:  
     ```
-    ecommerce-omnichannel-fta-12345-main-EECOL-BuyonTheFly-e2eTests
+    ecommerce-omnichannel-fta-120-DevRegression-Dev-EECOL-Poweruser-workflow1
     ```
 
 - This naming convention helps in easy identification and organization of test artifacts.

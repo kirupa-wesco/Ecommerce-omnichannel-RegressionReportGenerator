@@ -4,17 +4,19 @@ const { readTestResultsFromFolder } = require('./src/utils/jsonReader');
 const ReportGenerator = require('./src/reportgenerator/reportGenerator');
 
 function parseFolderMeta(folderName) {
-    // Example: ecommerce-omnichannel-fta-125-DevRegression-EECOL-GreyMatter-ApprovalRules
+    //Example folder name: "ECommerce-omnichannel-fta-githubJobId-branch-env-brand-team-workflowName
     const parts = folderName.split('-');
     const ftaIndex = parts.findIndex(p => p.toLowerCase() === 'fta');
     if (ftaIndex === -1 || parts.length < ftaIndex + 5) {
-        return { githubJobId: '', branch: '', brand: '', team: '' };
+        return { githubJobId: '', branch: '', env: '', brand: '', team: '' ,workflowName: ''};
     }
     return {
         githubJobId: parts[ftaIndex + 1] || '',
         branch: parts[ftaIndex + 2] || '',
-        brand: parts[ftaIndex + 3] || '',
-        team: parts[ftaIndex + 4] || ''
+        env: parts[ftaIndex + 3] || '',
+        brand: parts[ftaIndex + 4] || '',
+        team: parts[ftaIndex + 5] || '',
+        workflowName: parts[ftaIndex + 6] || ''
     };
 }
 

@@ -36,7 +36,6 @@ function readTestResultsFromFolder(folderPath) {
         if (hasFailure) {
             allChildren.forEach(child => {
                 if (child.result && child.result.toUpperCase() === "FAILURE") {
-                    // ...existing code...
                     let rawFailureMsg = json.testFailureMessage || "";
                     let cleanFailureMsg = rawFailureMsg.split("Build info:")[0].trim();
 
@@ -52,7 +51,6 @@ function readTestResultsFromFolder(folderPath) {
                         testFailureMessage: cleanFailureMsg,
                         testFailureSummary: json.testFailureSummary || ""
                     });
-                    // ...existing code...
                 }
             });
         } else {
