@@ -100,7 +100,7 @@ node index.js
 
 ## 🙋‍♀️ Need Help?
 
-- For any issuesping your friendly neighborhood dev!
+- For any issues ping me!
 
 ---
 
