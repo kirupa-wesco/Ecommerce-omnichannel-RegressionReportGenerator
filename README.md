@@ -51,6 +51,7 @@ Hey! 😎 Welcome to the RegressionReportGenerator project. This repo is designe
 
 2. **Install dependencies:**
    ```sh
+   node --version
    npm install
    ```
    This will install all required Node.js packages as per [package.json](package.json).
