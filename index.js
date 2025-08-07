@@ -2,6 +2,8 @@ const path = require('path');
 const fs = require('fs');
 const { readTestResultsFromFolder } = require('./src/utils/jsonReader');
 const ReportGenerator = require('./src/reportgenerator/reportGenerator');
+const unzipper = require('unzipper'); // npm install unzipper
+const os = require('os');
 
 function parseFolderMeta(folderName) {
     // Example folder name: "ECommerce-omnichannel-fta-githubJobId-branch-env-brand-team-workflowName"
@@ -37,26 +39,41 @@ function parseFolderMeta(folderName) {
 
     const generator = new ReportGenerator();
 
-    // Get all subfolders in Artifacts
-    const subfolders = fs.readdirSync(artifactsDir).filter(f =>
-        fs.statSync(path.join(artifactsDir, f)).isDirectory()
-    );
+    // Get all entries (folders + zip files) in Artifacts
+    const artifactEntries = fs.readdirSync(artifactsDir);
 
     let allFailureData = [];
     let allSuccessData = [];
     let allOthersData = [];
 
-    for (const folder of subfolders) {
-        const inputDir = path.join(artifactsDir, folder);
-        const successReport = path.join(successReportsDir, `SuccessTestCases_${folder}.xlsx`);
-        const failureReport = path.join(failureReportsDir, `FailedTestCases_${folder}.xlsx`);
-        const othersReport = path.join(othersReportsDir, `OtherTestCases_${folder}.xlsx`);
+    for (const entry of artifactEntries) {
+        const entryPath = path.join(artifactsDir, entry);
+        let inputDir = entryPath;
+        let isTemp = false;
+        let folderName = entry;
+
+        if (fs.statSync(entryPath).isFile() && entry.endsWith('.zip')) {
+            // If zip file, extract to temp dir
+            const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'artifact-'));
+            await fs.createReadStream(entryPath)
+                .pipe(unzipper.Extract({ path: tempDir }))
+                .promise();
+            inputDir = tempDir;
+            isTemp = true;
+            folderName = entry.replace(/\.zip$/i, '');
+        } else if (!fs.statSync(entryPath).isDirectory()) {
+            continue; // Skip non-folder, non-zip
+        }
+
+        const successReport = path.join(successReportsDir, `SuccessTestCases_${folderName}.xlsx`);
+        const failureReport = path.join(failureReportsDir, `FailedTestCases_${folderName}.xlsx`);
+        const othersReport = path.join(othersReportsDir, `OtherTestCases_${folderName}.xlsx`);
 
         // Read test results from the folder
         const { successData, failureData, othersData } = readTestResultsFromFolder(inputDir);
 
         // Attach meta info to each test case
-        const meta = parseFolderMeta(folder);
+        const meta = parseFolderMeta(folderName);
         const successDataWithMeta = successData.map(tc => ({ ...tc, ...meta }));
         const failureDataWithMeta = failureData.map(tc => ({ ...tc, ...meta }));
         const othersDataWithMeta = othersData.map(tc => ({ ...tc, ...meta }));
@@ -71,11 +88,12 @@ function parseFolderMeta(folderName) {
         await generator.generateFailureReport(failureDataWithMeta, failureReport);
         await generator.generateOthersReport(othersDataWithMeta, othersReport);
 
-        // Uncomment if you want per-folder logs
-        // console.log(`✅ Success report created at: ${successReport}`);
-        // console.log(`❌ Failure report created at: ${failureReport}`);
-        // console.log(`🟡 Others report created at: ${othersReport}`);
+        // Clean up temp dir if used
+        if (isTemp) {
+            fs.rmSync(inputDir, { recursive: true, force: true });
+        }
     }
+
     const consolidatedSuccessReport = path.join(successReportsDir, `AllSuccessTestCases.xlsx`);
     const consolidatedFailureReport = path.join(failureReportsDir, `AllFailedTestCases.xlsx`);
     const consolidatedOthersReport = path.join(othersReportsDir, `AllOtherTestCases.xlsx`);
