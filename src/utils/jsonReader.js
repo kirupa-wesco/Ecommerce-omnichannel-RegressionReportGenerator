@@ -9,7 +9,13 @@ function readTestResultsFromFolder(folderPath) {
 
     files.forEach(file => {
         const content = fs.readFileSync(path.join(folderPath, file), 'utf-8');
-        const json = JSON.parse(content);
+            let json;
+            try {
+                json = JSON.parse(content);
+            } catch (err) {
+                console.warn(`Skipping invalid JSON file: ${file} - ${err.message}`);
+                return; // skip this file
+            }
 
         let testCaseName = "N/A";
         if (json.tags) {
