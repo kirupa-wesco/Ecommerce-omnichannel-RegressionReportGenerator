@@ -6,27 +6,23 @@ const ReportGenerator = require('./src/reportgenerator/reportGenerator');
 function parseFolderMeta(folderName) {
     // Remove timestamp at the start
     const nameWithoutTimestamp = folderName.replace(/^\d{14}-/, '');
+    const parts = nameWithoutTimestamp.split('-');
     // List of brands
     const brands = ['ANIXTER', 'EECOL', 'XPRESSCONNECT', 'ACCUTECH'];
-    // Find brand in folder name
-    let brand = brands.find(b => nameWithoutTimestamp.includes(`-${b}-`));
-    if (!brand) brand = brands.find(b => nameWithoutTimestamp.includes(`-${b} `));
-    if (!brand) brand = brands.find(b => nameWithoutTimestamp.includes(`-${b}`));
-    // Workflow name is always the same
+    // Find brand index
+    const brandIndex = parts.findIndex(p => brands.includes(p.trim()));
     const workflowName = 'Parallel Test for all Critical Paths on Staging';
-    // Find indices
-    let company = '';
-    if (brand) {
-        const brandIndex = nameWithoutTimestamp.indexOf(brand) + brand.length + 1;
-        const workflowIndex = nameWithoutTimestamp.indexOf(workflowName);
-        if (brandIndex > 0 && workflowIndex > brandIndex) {
-            company = nameWithoutTimestamp.substring(brandIndex, workflowIndex - 1).trim();
-        }
-    }
+    const workflowIndex = parts.findIndex(p => p.trim() === workflowName);
+
     return {
-        brand: brand || '',
-        company: company,
-        workflowName
+        githubJobId: parts[2] || '', // after repo and timestamp
+        branch: parts[3] || '',
+        brand: brandIndex !== -1 ? parts[brandIndex].trim() : '',
+        team: (brandIndex !== -1 && workflowIndex !== -1)
+            ? parts.slice(brandIndex + 1, workflowIndex).join('-').trim()
+            : '',
+        workflowName: workflowIndex !== -1 ? parts[workflowIndex].trim() : workflowName,
+        environment: parts[parts.length - 1] || ''
     };
 }
 
