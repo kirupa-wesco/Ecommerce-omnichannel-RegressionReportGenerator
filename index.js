@@ -4,19 +4,25 @@ const { readTestResultsFromFolder } = require('./src/utils/jsonReader');
 const ReportGenerator = require('./src/reportgenerator/reportGenerator');
 
 function parseFolderMeta(folderName) {
-    // Example folder name: "ECommerce-omnichannel-fta-githubJobId-branch-env-brand-team-workflowName"
-    const parts = folderName.split('-');
-    const ftaIndex = parts.findIndex(p => p.toLowerCase() === 'fta');
-    if (ftaIndex === -1 || parts.length < ftaIndex + 5) {
-        return { githubJobId: '', branch: '', env: '', brand: '', team: '', workflowName: '' };
-    }
+    // Remove timestamp at the start
+    const nameWithoutTimestamp = folderName.replace(/^\d{14}-/, '');
+    const parts = nameWithoutTimestamp.split('-');
+    // Always take from the right
+    const env = parts.pop() || '';
+    const workflowName = parts.pop() || '';
+    const team = parts.pop() || '';
+    const brand = parts.pop() || '';
+    const branch = parts.pop() || '';
+    const githubJobId = parts.pop() || '';
+    const repoName = parts.join('-');
     return {
-        githubJobId: parts[ftaIndex + 1] || '',
-        branch: parts[ftaIndex + 2] || '',
-        env: parts[ftaIndex + 3] || '',
-        brand: parts[ftaIndex + 4] || '',
-        team: parts[ftaIndex + 5] || '',
-        workflowName: parts[ftaIndex + 6] || ''
+        repoName,
+        githubJobId,
+        branch,
+        brand: brand.trim(),
+        team: team.trim(),
+        workflowName: workflowName.trim(),
+        env: env.trim()
     };
 }
 
