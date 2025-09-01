@@ -15,8 +15,8 @@ function parseFolderMeta(folderName) {
     const workflowIndex = parts.findIndex(p => p.trim() === workflowName);
 
     return {
-        githubJobId: parts[2] || '', // after repo and timestamp
-        branch: parts[3] || '',
+        githubJobId: parts[3] || '', // after repo and timestamp
+        branch: parts[4] || '',
         brand: brandIndex !== -1 ? parts[brandIndex].trim() : '',
         team: (brandIndex !== -1 && workflowIndex !== -1)
             ? parts.slice(brandIndex + 1, workflowIndex).join('-').trim()
