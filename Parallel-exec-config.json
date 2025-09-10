@@ -1,0 +1,625 @@
+{
+  "include": {
+    "ANIXTER": [
+      {
+        "tag": "LoginCritical",
+        "country": "USA",
+        "company": "[Power Users] ANX",
+        "user": "powerusers.wesco+comp.anx.us.multi.b.admin@gmail.com"
+      },
+      {
+        "tag": "CartCritical",
+        "country": "USA",
+        "company": "108944",
+        "user": "anixtertestaccnt+comp-automa.buyonfly.311.us.anx@gmail.com"
+      },
+      {
+        "tag": "QuickOrderCritical",
+        "country": "USA",
+        "company": "QA-65-US-anx-Merc-creditcar",
+        "user": "anixtertestaccnt+merch.qa.anx.us.creditcard.65@gmail.com"
+      },
+      {
+        "tag": "OrderHistoryCritical",
+        "country": "USA",
+        "company": "108944",
+        "user": "axe001us+dominators+29@gmail.com"
+      },
+      {
+        "tag": "AccountDashboardCritical",
+        "country": "USA",
+        "company": "108944",
+        "user": "anixtertestaccnt+buyonfly.automation.anx.us.noncontract.31@gmail.com"
+      },
+      {
+        "tag": "RolesAndPermissionsCritical",
+        "country": "USA",
+        "company": "108944 - Automa-32-US-anx-Powe-noncontr",
+        "user": "anixtertestaccnt+powerusers.automation.anx.us.noncontract.32@gmail.com"
+      },
+      {
+        "tag": "SourcingRequestCritical",
+        "country": "USA",
+        "company": " [Power Users] ANX",
+        "user": "powerusers.wesco+comp.anx.multi.sonali@gmail.com"
+      },
+      {
+        "tag": "MultipleAccountsCritical",
+        "country": "USA",
+        "company": " [Power Users] ANX",
+        "user": "powerusers.wesco+comp.anx.multi.shek@gmail.com"
+      },
+      {
+        "tag": "AddressbookCritical",
+        "country": "USA",
+        "company": " [Power Users] ANX",
+        "user": "powerusers.wesco+comp.anx.us.multi.a.admin@gmail.com"
+      },
+      {
+        "tag": "SavedListCritical",
+        "country": "USA",
+        "company": "108944 - Automa-31-US-anx-BuyO-noncontr",
+        "user": "anixtertestaccnt+buyonfly.automation.anx.us.noncontract.31@gmail.com"
+      },
+      {
+        "tag": "GuestUserCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+powerusers.regression.anx.us.triedcontract.2@gmail.com"
+      },
+      {
+        "tag": "SearchCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+martech.regression.anx.us.contract.23@gmail.com"
+      },
+      {
+        "tag": "SearchResultsPageCritical",
+        "country": "USA",
+        "company": "Regres-13-US-anx-Mart-creditca",
+        "user": "anixtertestaccnt+martech.regression.anx.us.creditcard.13@gmail.com"
+      },
+      {
+        "tag": "ProductListPageCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+martech.regression.anx.us.noncontract.18@gmail.com"
+      },
+      {
+        "tag": "ProductDetailPageCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+martech.regression.anx.us.taxexempt.8@gmail.com"
+      },
+      {
+        "tag": "ShopByCategoryCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+martech.regression.anx.us.triedcontract.3@gmail.com"
+      },
+      {
+        "tag": "BrowseHistoryCritical",
+        "country": "USA",
+        "company": "Regres-6-US-anx-BuyO-noncontra",
+        "user": "anixtertestaccnt+integrators.regression.anx.us.taxexempt.2@gmail.com"
+      },
+      {
+        "tag": "PunchoutCritical",
+        "country": "USA",
+        "company": "108944",
+        "user": "anixtertestaccnt+comp-automa.buyonfly.311.us.anx@gmail.com"
+      },
+      {
+        "tag": "PurchaseWorkflowCritical",
+        "country": "USA",
+        "company": "108944 - QA-59-US-anx-Grey-noncontra",
+        "user": "axe001us+Submitter@gmail.com"
+      },
+      {
+        "tag": "ApprovalRulesCritical",
+        "country": "USA",
+        "company": "108944 - Approval Rules Company",
+        "user": "axe001us+anxrulecreator@gmail.com"
+      },
+      {
+        "tag": "CreditCardCritical",
+        "country": "USA",
+        "company": "108944 - Automa-34-US-anx-Grey-noncontr",
+        "user": "anixtertestaccnt+greym.automation.anx.us.noncontract.34@gmail.com"
+      },
+      {
+        "tag": "LoginCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature1@gmail.com"
+      },
+      {
+        "tag": "CartCritical",
+        "country": "GB",
+        "company": "237961 - 237961-GB-GDPR-CustOwn-u3uz03",
+        "user": "AXE001UK+buyer@gmail.com"
+      },
+      {
+        "tag": "QuickOrderCritical",
+        "country": "GB",
+        "company": "108944 - Automa-31-US-anx-BuyO-noncontr",
+        "user": "anixtertestaccnt+buyonfly.automation.anx.us.noncontract.31@gmail.com"
+      },
+      {
+        "tag": "OrderHistoryCritical",
+        "country": "GB",
+        "company": "077435 - 077435-GB-Contract-Wor-u3uz01",
+        "user": "AXE001UK+fin@gmail.com"
+      },
+      {
+        "tag": "AccountDashboardCritical",
+        "country": "GB",
+        "company": "077435",
+        "user": "AXE001UK+Feature16@gmail.com"
+      },
+      {
+        "tag": "RolesAndPermissionsCritical",
+        "country": "GB",
+        "company": "77435",
+        "user": "axe001uk+admin@gmail.com"
+      },
+      {
+        "tag": "SourcingRequestCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature5@gmail.com"
+      },
+      {
+        "tag": "AddressbookCritical",
+        "country": "GB",
+        "company": "077435 - 077435-GB-Contract-Wor-u3uz01",
+        "user": "AXE001UK+Feature3@gmail.com"
+      },
+      {
+        "tag": "SavedListCritical",
+        "country": "GB",
+        "company": "237961 - 237961-GB-GDPR-CustOwn-u3uz03",
+        "user": "AXE001UK+buyer@gmail.com"
+      },
+      {
+        "tag": "GuestUserCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature9@gmail.com"
+      },
+      {
+        "tag": "SearchCritical",
+        "country": "GB",
+        "company": "Automa-41-US-anx-BuyO-taxexemp",
+        "user": "AXE001UK+Feature10@gmail.com"
+      },
+      {
+        "tag": "SearchResultsPageCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature11@gmail.com"
+      },
+      {
+        "tag": "ProductListPageCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature12@gmail.com"
+      },
+      {
+        "tag": "ProductDetailPageCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature13@gmail.com"
+      },
+      {
+        "tag": "ShopByCategoryCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature14@gmail.com"
+      },
+      {
+        "tag": "BrowseHistoryCritical",
+        "country": "GB",
+        "company": "077435 - 077435-Contract-Workfl-tjza01",
+        "user": "AXE001UK+Feature15@gmail.com"
+      },
+      {
+        "tag": "PunchoutCritical",
+        "country": "GB",
+        "company": "237961 - 237961-GB-GDPR-CustOwn-u3uz03",
+        "user": "AXE001UK+buyer@gmail.com"
+      },
+      {
+        "tag": "PurchaseWorkflowCritical",
+        "country": "GB",
+        "company": "077435 - 077435-GB-Contract-Wor-u3uz01",
+        "user": "axe001uk+Submitter@gmail.com"
+      },
+      {
+        "tag": "ApprovalRulesCritical",
+        "country": "GB",
+        "company": "077435 - 077435-GB-Contract-ApprovalRules",
+        "user": "axe001us+gbanxrulecreator@gmail.com"
+      }
+    ],
+    "EECOL": [
+      {
+        "tag": "LoginCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA1@gmail.com"
+      },
+      {
+        "tag": "CartCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "AXE001us+TA8@gmail.com"
+      },
+      {
+        "tag": "QuickOrderCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA2@gmail.com"
+      },
+      {
+        "tag": "OrderHistoryCritical",
+        "country": "CA",
+        "company": "Co6-SPLASA-SR01-B01",
+        "user": "axe001us+nemish@gmail.com"
+      },
+      {
+        "tag": "AccountDashboardCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA5@gmail.com"
+      },
+      {
+        "tag": "RolesAndPermissionsCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+TA2@gmail.com"
+      },
+      {
+        "tag": "SourcingRequestCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "AXE001us+TA1@gmail.com"
+      },
+      {
+        "tag": "MultipleAccountsCritical",
+        "country": "CA",
+        "company": "[Power Users] EECOL",
+        "user": "powerusers.wesco+comp.eecol.multi.shek@gmail.com"
+      },
+      {
+        "tag": "AddressbookCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "AXE001us+TA1@gmail.com"
+      },
+      {
+        "tag": "SavedListCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA2@gmail.com"
+      },
+      {
+        "tag": "GuestUserCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelSearch1@gmail.com"
+      },
+      {
+        "tag": "SearchCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelSearch2@gmail.com"
+      },
+      {
+        "tag": "SearchResultsPageCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelSearch3@gmail.com"
+      },
+      {
+        "tag": "ProductListPageCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelProducts1@gmail.com"
+      },
+      {
+        "tag": "ProductDetailPageCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelProducts2@gmail.com"
+      },
+      {
+        "tag": "ShopByCategoryCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+ParallelProducts3@gmail.com"
+      },
+      {
+        "tag": "BrowseHistoryCritical",
+        "country": "CA",
+        "company": "C002MV",
+        "user": "axe001us+e2e2@gmail.com"
+      },
+      {
+        "tag": "QuoteOrderCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA1@gmail.com"
+      },
+      {
+        "tag": "PunchoutCritical",
+        "country": "CA",
+        "company": "C002RK",
+        "user": "axe001us+e2e4@gmail.com"
+      },
+      {
+        "tag": "PurchaseWorkflowCritical",
+        "country": "CA",
+        "company": "E002CN - TEST Co10-E002CN-SR02-B08",
+        "user": "axe001us+EECOLSubmitter@gmail.com"
+      },
+      {
+        "tag": "ApprovalRulesCritical",
+        "country": "CA",
+        "company": "C002RK - Approval rules testing company",
+        "user": "axe001us+eecolrulecreator@gmail.com"
+      },
+      {
+        "tag": "CreditCardCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Spartans Company",
+        "user": "axe001us+spartanccuser@gmail.com"
+      },
+      {
+        "tag": "AccountRegistrationCritical",
+        "country": "CA",
+        "company": "C002RK - TEST QA Test Company",
+        "user": "AXE001us+TA1@gmail.com"
+      }
+    ],
+    "XPRESSCONNECT": [
+      {
+        "tag": "LoginCritical",
+        "country": "USA",
+        "company": " [Power Users] XPC ",
+        "user": "powerusers.wesco+comp.xpc.us.multi.b.admin@gmail.com"
+      },
+      {
+        "tag": "CartCritical",
+        "country": "USA",
+        "company": "240461",
+        "user": "anixtertestaccnt+buyonfly.automation.xcs.us.noncontract.31@gmail.com"
+      },
+      {
+        "tag": "QuickOrderCritical",
+        "country": "USA",
+        "company": "240461 - Automa-33-US-xcs-Mart-noncontr",
+        "user": "anixtertestaccnt+martech.automation.xcs.us.noncontract.33@gmail.com"
+      },
+      {
+        "tag": "OrderHistoryCritical",
+        "country": "USA",
+        "company": "Regres-11-US-xcs-BuyO-noncontr",
+        "user": "axe001us+E2E4@gmail.com"
+      },
+      {
+        "tag": "AccountDashboardCritical",
+        "country": "USA",
+        "company": "Automa-32-US-xcs-Powe-noncontr",
+        "user": "anixtertestaccnt+powerusers.automation.xcs.us.noncontract.32@gmail.com"
+      },
+      {
+        "tag": "RolesAndPermissionsCritical",
+        "country": "USA",
+        "company": " [Power Users] XPC ",
+        "user": "powerusers.wesco+comp.xpc.us.multi.a.admin@gmail.com"
+      },
+      {
+        "tag": "SourcingRequestCritical",
+        "country": "USA",
+        "company": " [Power Users] XPC ",
+        "user": "powerusers.wesco+comp.xpc.multi.sonali@gmail.com"
+      },
+      {
+        "tag": "MultipleAccountsCritical",
+        "country": "USA",
+        "company": "[Power Users] XPC",
+        "user": "powerusers.wesco+comp.xpc.multi.shek@gmail.com"
+      },
+      {
+        "tag": "AddressbookCritical",
+        "country": "USA",
+        "company": "[Power Users] XPC",
+        "user": "powerusers.wesco+comp.xpc.multi.user1@gmail.com"
+      },
+      {
+        "tag": "SavedListCritical",
+        "country": "USA",
+        "company": "240461 - Automa-33-US-xcs-Mart-noncontr",
+        "user": "anixtertestaccnt+martech.automation.xcs.us.noncontract.33@gmail.com"
+      },
+      {
+        "tag": "GuestUserCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+search1@gmail.com"
+      },
+      {
+        "tag": "SearchCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+merch.automation.xcs.us.contract.40@gmail.com"
+      },
+      {
+        "tag": "SearchResultsPageCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+merch.automation.xcs.us.creditcard.35@gmail.com"
+      },
+      {
+        "tag": "ProductListPageCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+martech.automation.xcs.us.creditcard.33@gmail.com"
+      },
+      {
+        "tag": "ProductDetailPageCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+search2@gmail.com"
+      },
+      {
+        "tag": "ShopByCategoryCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+search3@gmail.com"
+      },
+      {
+        "tag": "BrowseHistoryCritical",
+        "country": "USA",
+        "company": "Regres-14-US-xcs-Grey-noncontr",
+        "user": "anixtertestaccnt+search4@gmail.com"
+      },
+      {
+        "tag": "PunchoutCritical",
+        "country": "USA",
+        "company": "Automa-7-US-xcs-Inte-creditcar",
+        "user": "anixtertestaccnt+integrators.automation.xcs.us.creditcard.7@gmail.com"
+      },
+      {
+        "tag": "PurchaseWorkflowCritical",
+        "country": "USA",
+        "company": "240461 - Regres-14-US-xcs-Grey-noncontr",
+        "user": "axe001us+XCSubmitter@gmail.com"
+      },
+      {
+        "tag": "ApprovalRulesCritical",
+        "country": "USA",
+        "company": "240461 - Approval Rule Company",
+        "user": "axe001us+xcsrulecreator@gmail.com"
+      }
+    ],
+    "ACCUTECH": [
+      {
+        "tag": "LoginCritical",
+        "country": "USA",
+        "company": "[Power Users] Accu-Tech",
+        "user": "axe001us+priyanka-accutech@gmail.com"
+      },
+      {
+        "tag": "CartCritical",
+        "country": "USA",
+        "company": "000245",
+        "user": "axe001us+autom.bof@gmail.com"
+      },
+      {
+        "tag": "QuickOrderCritical",
+        "country": "USA",
+        "company": "000245 - 000245-E2E-US-LEGACY-ttrg9",
+        "user": "axe001us+autom.integrators@gmail.com"
+      },
+      {
+        "tag": "AccountDashboardCritical",
+        "country": "USA",
+        "company": "[Power Users] Accu-Tech",
+        "user": "powerusers.wesco+accu-tech.us.sonali@gmail.com"
+      },
+      {
+        "tag": "RolesAndPermissionsCritical",
+        "country": "USA",
+        "company": "000245 - ",
+        "user": "axe001us+legacy.powusrs@gmail.com"
+      },
+      {
+        "tag": "SourcingRequestCritical",
+        "country": "USA",
+        "company": "[Power Users] Accu-Tech",
+        "user": "powerusers.wesco+accu-tech.us.shek@gmail.com."
+      },
+      {
+        "tag": "MultipleAccountsCritical",
+        "country": "USA",
+        "company": "000245 - ",
+        "user": "axe001us+regres.powusrs@gmail.com"
+      },
+      {
+        "tag": "AddressbookCritical",
+        "country": "USA",
+        "company": "[Power Users] Accu-Tech",
+        "user": "powerusers.wesco+comp.accu-tech.us.b.admin@gmail.com"
+      },
+      {
+        "tag": "SavedListCritical",
+        "country": "USA",
+        "company": "000245 - 000245-E2E-US-LEGACY-ttrg1",
+        "user": "axe001us+e2e.integrators@gmail.com"
+      },
+      {
+        "tag": "GuestUserCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001us+TA4@gmail.com"
+      },
+      {
+        "tag": "SearchCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001us+TA5@gmail.com"
+      },
+      {
+        "tag": "SearchResultsPageCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001us+TA8@gmail.com"
+      },
+      {
+        "tag": "ProductListPageCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001US+E2E14@gmail.com"
+      },
+      {
+        "tag": "ProductDetailPageCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001US+E2E15@gmail.com"
+      },
+      {
+        "tag": "ShopByCategoryCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001US+E2E16@gmail.com"
+      },
+      {
+        "tag": "BrowseHistoryCritical",
+        "country": "USA",
+        "company": "AC0158-0488-Farhan-US-act-tqth",
+        "user": "AXE001US+E2E17@gmail.com"
+      },
+      {
+        "tag": "CreditCardCritical",
+        "country": "USA",
+        "company": "000245 - 000245-Tamil-US-LEGACY-trgr",
+        "user": "tamilelavenil.kannappan@wescodist.com"
+      },
+      {
+        "tag": "ApprovalRulesCritical",
+        "country": "USA",
+        "company": "000245 - 000245-Auto-US-LEGACY-ttrg33",
+        "user": "axe001us+actrulecreator@gmail.com"
+      },
+      {
+        "tag": "PurchaseWorkflowCritical",
+        "country": "USA",
+        "company": "000245 - 000245-Regr-US-LEGACY-ttrg21",
+        "user": "greymatterworkflow+submitter@gmail.com"
+      }
+    ]
+  }
+}
+
